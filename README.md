@@ -2,25 +2,34 @@
 
 **Analyse interactive du système électrique français — Données officielles RTE et SDES**
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/VOTRE_USER/eco2mix-drom/releases) [![Licence](https://img.shields.io/badge/licence-Licence%20Ouverte%202.0-0055A4.svg)](https://www.etalab.gouv.fr/licence-ouverte-open-licence) [![Made in France](https://img.shields.io/badge/Made%20in-France-000091.svg)](https://www.gouvernement.fr) [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/fr/docs/Web/JavaScript) [![Plotly](https://img.shields.io/badge/Plotly.js-2.27.0-3F4F75?logo=plotly&logoColor=white)](https://plotly.com/javascript/) [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-18753c?logo=github&logoColor=white)](https://VOTRE_USER.github.io/eco2mix-drom/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/gunout/eco2mix-regions/releases)
+[![Licence](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made in France](https://img.shields.io/badge/Made%20in-France-000091.svg)](https://www.gouvernement.fr)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+[![Plotly](https://img.shields.io/badge/Plotly.js-2.27.0-3F4F75?logo=plotly&logoColor=white)](https://plotly.com/javascript/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-18753c?logo=github&logoColor=white)](https://gunout.github.io/eco2mix-regions/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/gunout/eco2mix-regions/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/gunout/eco2mix-regions)](https://github.com/gunout/eco2mix-regions/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/gunout/eco2mix-regions)](https://github.com/gunout/eco2mix-regions)
 
-[🚀 Démo live](https://VOTRE_USER.github.io/eco2mix-drom/) · [🐛 Signaler un bug](https://github.com/VOTRE_USER/eco2mix-drom/issues) · [✨ Demander une fonctionnalité](https://github.com/VOTRE_USER/eco2mix-drom/issues)
+[🚀 Démo live](https://gunout.github.io/eco2mix-regions/) · [🐛 Signaler un bug](https://github.com/gunout/eco2mix-regions/issues) · [✨ Demander une fonctionnalité](https://github.com/gunout/eco2mix-regions/issues)
 
 ---
 
 ## 📋 Table des matières
 
-- [Présentation](#présentation)
-- [Fonctionnalités](#fonctionnalités)
-- [Sources de données](#sources-de-données)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Déploiement](#déploiement)
-- [Documentation](#documentation)
-- [Structure du projet](#structure-du-projet)
-- [Codes indicateurs](#codes-indicateurs)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+- [Présentation](#-présentation)
+- [Fonctionnalités](#-fonctionnalités)
+- [Sources de données](#-sources-de-données)
+- [Architecture](#️-architecture)
+- [Installation](#-installation)
+- [Déploiement](#-déploiement)
+- [Documentation](#-documentation)
+- [Structure du projet](#-structure-du-projet)
+- [Codes indicateurs](#-codes-indicateurs)
+- [Contribuer](#-contribuer)
+- [Licence](#-licence)
 
 ---
 
@@ -134,8 +143,8 @@ Le projet vise à offrir un **outil d'analyse expert** pour chercheurs, journali
 1. **Cloner le dépôt**
 
    ```bash
-   git clone https://github.com/VOTRE_USER/eco2mix-drom.git
-   cd eco2mix-drom
+   git clone https://github.com/gunout/eco2mix-regions.git
+   cd eco2mix-regions
    ```
 
 2. **Ouvrir localement**
@@ -143,7 +152,7 @@ Le projet vise à offrir un **outil d'analyse expert** pour chercheurs, journali
    ```bash
    # Python 3
    python3 -m http.server 8000
-   
+
    # ou Node.js
    npx serve
    ```
@@ -179,7 +188,7 @@ Le projet vise à offrir un **outil d'analyse expert** pour chercheurs, journali
 3. **Accéder au dashboard**
 
    ```text
-   https://VOTRE_USER.github.io/eco2mix-drom/
+   https://gunout.github.io/eco2mix-regions/
    ```
 
 ### Déploiement du proxy Cloudflare Worker
@@ -255,11 +264,11 @@ movingAverage([1,2,3,4,5], 3)     // [null, null, 2, 3, 4]
 ## 📁 Structure du projet
 
 ```text
-eco2mix-drom/
+eco2mix-regions/
 ├── index.html                     # Dashboard complet (métropole + DROM)
 ├── drom_energie_2014_2024.json    # Données SDES DROM-COM
 ├── README.md                      # Ce fichier
-├── LICENSE                        # Licence Ouverte 2.0
+├── LICENSE                        # Licence MIT
 └── .gitignore                     # Fichiers à ignorer
 ```
 
@@ -325,21 +334,25 @@ Les contributions sont **les bienvenues** !
 
 ## 📄 Licence
 
-Ce projet est distribué sous **Licence Ouverte 2.0** (Etalab).
+Ce projet est distribué sous **licence MIT**.
 
 Vous êtes libre de :
 
-- ✅ **Partager** — copier, distribuer et communiquer le matériel
-- ✅ **Adapter** — remixer, transformer et créer à partir du matériel
-- ✅ **Utiliser à des fins commerciales**
+- ✅ **Utiliser** — à des fins personnelles ou commerciales
+- ✅ **Modifier** — adapter le code à vos besoins
+- ✅ **Distribuer** — partager le code modifié ou non
+- ✅ **Sublicencier** — inclure dans un projet plus large
 
 À condition de :
 
-- 📌 **Mentionner la paternité** (RTE, SDES, Etalab)
-- 📌 **Indiquer les modifications** effectuées
-- 📌 **Ne pas utiliser à des fins de désinformation**
+- 📌 **Conserver** la notice de copyright et la licence originale
+- 📌 **Ne pas engager** la responsabilité des auteurs
 
-Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Voir le fichier [LICENSE](LICENSE) pour le texte complet.
+
+> **Note sur les données** : le code de ce projet est sous licence MIT.
+> Les données sources (RTE éCO2mix et SDES) restent sous **Licence Ouverte 2.0**
+> (Etalab) et doivent être mentionnées comme telles lors de toute réutilisation.
 
 ---
 
@@ -355,6 +368,8 @@ Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 ---
 
 **⚡ Fait avec ❤️ pour la transition énergétique française**
+
+© 2026 **Gunout** — Tous droits réservés.
 
 ---
 
